@@ -14,3 +14,4 @@ As this webcrawler is intended for a single pc, it is self-evident that one has 
 
 This Loop Crawler Distributed project is still in development and will take some time to finish as I'm studying and working in parallel to working on this project.
 That being said, I will continue to provide commits to the Loop Crawler OG whenever I can. I have already remade most of the modules in V2 and will commit them soon.
+I have a transformer class that I plan to implement based on pandas/numpy to transform the crawled data such as setting the right types of data, etc. However, most likely the end users will have to define pandas instructions by themselves.
