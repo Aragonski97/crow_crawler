@@ -3,7 +3,7 @@ A general purpose HTML webcrawler that utilizes python asynchronous and multipro
 The crawler expects mandatory foreign_id column which represents id of the final product and it has to be int. This was for my uses only, can easily be tweaked in ConnectionObject.upload_file.
 It's fullest potential can be seen when working with paginated architectures such as Ebay's, although I had no need of crawling Ebay in particular.
 
-Have in mind that I am working on this project for a couple of months now, so my skills have progressed, which is why you might encounter code which is not uniformly written.
+Have in mind that I am working on this project for a couple of months now, so my skills have progressed, which is why you might encounter code which is not uniformly written. Initially it was supposed to be much smaller, but as my skills grew so did my curiosity.
 
 Loop Crawler currently supports MySQL database connection only, but since the underlying engine / ORM is SQLAlchemy, this can easily be tweaked to support other SQL databases.
 There is also support for AWS S3 architecture, although this was only used in testing.
