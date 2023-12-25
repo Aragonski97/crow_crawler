@@ -1,4 +1,4 @@
-# loop_crawler
+# Loop Crawler v1
 A general purpose HTML webcrawler that utilizes python asynchronous and multiprocessing capabilities to quickly download and process the data.
 The crawler expects mandatory foreign_id column which represents id of the final product and it has to be int. This was for my uses only, can easily be tweaked in ConnectionObject.upload_file.
 It's fullest potential can be seen when working with paginated architectures such as Ebay's, although I had no need of crawling Ebay in particular.
