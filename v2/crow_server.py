@@ -59,6 +59,7 @@ async def lifespan(app: FastAPI):
                                 err_message=err.args[0]
                             ))
     yield
+    exit(-1)
     queue_handler.listener.stop()
     SYNC_PROCESS.join()
     #ASYNC_ENGINE_RUN_TASK.cancel()

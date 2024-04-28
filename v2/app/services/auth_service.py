@@ -26,7 +26,7 @@ async def get_user(email: str, password: str) -> UserSchema | None:
     resolved by schema passed as an argument of the function.
     This is reliable because we will be outputting UserSchema only from this function
     as well as because we expect only auth schemas to enter.
-    They are by default mapped as UserORM in resolve_model function.
+    They are by default mapped as UserModel in resolve_model function.
     However, just in case, if that's not the case, resolve_model(schema).__qualname__ will be different
     then what is stored in results.first()._asdict(), so the .get method will return None,
     therefore we will raise HTTP exception.
@@ -46,7 +46,7 @@ async def get_user(email: str, password: str) -> UserSchema | None:
             statement = select(UserModel).filter(
                 and_(UserModel.email == email, UserModel.password == password)).limit(1)
             results = await session.execute(statement)
-            db_user = results.first()._asdict().get("UserORM")
+            db_user = results.first()._asdict().get("UserModel")
             if db_user is None:
                 raise HTTPException(
                     status_code=status.HTTP_401_UNAUTHORIZED,
