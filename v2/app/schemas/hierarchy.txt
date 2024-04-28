@@ -1,0 +1,24 @@
+Models presented here serve as templates for API Controllers as well as
+communication between the engines and servers.
+
+Any communication conducted between engines will be wrapped into Package.
+
+The following schema contains information about intended structure.
+
+ProfileSchema
+|
+|-------StepSchema1
+|       |
+|       |-------SelectorSchema1
+|       |
+|       |-------SelectorSchema2
+|       |
+|       |-------SelectorSchema3
+|               .
+|               .
+|               .
+|-------StepSchema2
+    .
+    .
+    .
+

@@ -1,0 +1,12 @@
+.idea
+.venv
+__pycache__/
+engines/__pycache__/
+app/__pycache__/
+app/class_models/__pycache__/
+app/logger/__pycache__/
+app/models/__pycache__/
+app/schemas/__pycache__/
+app/services/__pycache__/
+app/utils/__pycache__/
+credentials.py
