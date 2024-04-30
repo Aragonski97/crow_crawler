@@ -6,7 +6,7 @@ from passlib.context import CryptContext
 from credentials import *
 
 SYS = platform.system()
-SYS_DEL = "/" if SYS.lower() == "linux" else "\\"
+SYS_DEL = "/" if SYS.lower() in ["linux", "darwin"] else "\\"
 
 APP_PATH = Path(os.path.dirname(os.path.abspath(__file__))) / "app"
 
